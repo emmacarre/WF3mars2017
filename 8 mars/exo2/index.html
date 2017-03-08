@@ -11,14 +11,10 @@
         <meta charset="UTF-8">
 
         <!--Donner un titre à la page-->
-        <title>EXO 1 - Ajouter du style dans le HTML - 8 mars</title>
+        <title>EXO 2 - Intégrer un fichier CSS - 8 mars</title>
 
-        <!--Ajouter le style dans la balise head-->
-        <style>
-            h2{
-                color: blue;
-            }
-        </style>
+        <!--Intégrer une feuille de style CSS-->
+        <link rel="stylesheet" href="css/style.css">
 
     </head>
 
@@ -34,11 +30,11 @@
             <!--Navigation principale-->
             <nav>
                 <ul>
-                    <li><a href="#" style="color: red" >Accueil</a></li>
-                    <li><a href="#" style="color: red">A propos</a></li>
-                    <li><a href="#" style="color: red">Portfolio</a></li>
-                    <li><a href="#" style="color: red">Contact</a></li>
-                    <li><a href="#" style="color: red">Profil Github</a></li>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">A propos</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Profil Github</a></li>
                     
                 </ul>
 
@@ -51,15 +47,15 @@
         <main>
 
         <!--Créer une zone -->
-        <section>
-            <h2>A propos d'Emmanuelle Carre</h2>
+        <section class="redBackground">
+            <h2 id="bigTitle">A propos <b>d'Emmanuelle Carre</b></h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex iste corrupti suscipit alias, aperiam assumenda nisi voluptatibus dignissimos quaerat nihil quis ipsam, facilis in. Harum odio quae aperiam voluptatem iusto.
             </p>
         </section>
 
         <!--Créer une zone-->
             <section>
-                <h2>Portfolio d'Emmanuelle Carre</h2>
+                <h2 id="portfolioTitle">Portfolio <b>d'Emmanuelle Carre</b></h2>
                 <p>Cliquez sur un des projets ci-dessous</p>
 
          <!--Créer 3 sous-section-->
@@ -82,7 +78,7 @@
 
             <!--Créer une zone-->
             <section>
-                <h2>Contacter Emmanuelle Carre</h2>
+                <h2>Contacter <b>Emmanuelle Carre</b></h2>
                 <p>Vous pouvez envoyer un email en cliquant sur cette adresse : <a href="#">emma.carre@gmail.com</a></p>
             </section>
 
@@ -92,7 +88,7 @@
 
 
         <!--Fermture de la page-->
-        <footer>
+        <footer class="redBackground">
             <p>Under MIT License</p>
         </footer>
 
