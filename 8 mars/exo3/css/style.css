@@ -20,6 +20,10 @@ Style Reset
         /*1.5rem = 15px */
     }
 
+    section {
+    margin-bottom: 5rem;
+    }
+
     h1{
         font-size: 3rem; 
         /* 3 fois le font-size de Html (root)*/
@@ -57,3 +61,58 @@ Style Reset
     /*Centrer une balise de type bloc réduite en largeur */
     margin: 2rem auto; 
     }
+
+
+/* Mise en forme typographique*/
+
+    .presentation{
+
+        /*Modifier la famille de caractères de la font*/
+        font-family: "Arial", sans-serif; 
+
+        /*Modifier la taille de la font*/
+        font-size: 1.7rem; 
+
+        /* Modifier l'interlignage*/
+        line-height: 2em; 
+
+        /*Modifier la graisse de la font*/
+        font-weight: bold; 
+
+        /*Ajouter une ombre portée à la font*/
+        text-shadow: .5rem .5rem .5rem blue;
+    
+        /*Modifier la casse de la font*/
+        text-transform: uppercase;
+
+        /*Modifier le style de la font (italique)*/
+        font-style: italic; 
+
+        /*Modifier la décoration de la font */
+        text-decoration: underline; 
+
+        /*Modifier la couleur de la font*/
+        color: navajowhite; 
+
+        padding: 2rem;
+        background-color: red;
+        margin: 4rem auto;
+        }
+
+/* Utilisation des couleurs*/
+    #portfolio{
+        background-color: #960a58; /*Référence hexadécimale*/
+        color: navajowhite;   /*Nom intelligible*/
+        text-align: center; /*Agit sur les textes et les balises inline*/
+    }
+
+    #portfolio article{
+        background-color: rgba(236, 6, 135, 0.5); /*Utiliser RGBA pour modifier l'opacité de la couleur */
+        color : black;
+        padding: 2rem;
+        margin: 1rem; 
+
+        /* Faire en sorte d'afficher les articles sur 3 colonnes*/
+        display: inline-block; 
+    }
+    
