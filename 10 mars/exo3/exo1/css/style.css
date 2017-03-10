@@ -209,7 +209,7 @@ Style portfolio
         opacity: 0;
 
          /*Gérer une transition entre les états de la balise*/
-         -webkit-transition: all .5s; 
+         -webkit-transition: all .5s;  
          transition: all .5s; 
 
     }
