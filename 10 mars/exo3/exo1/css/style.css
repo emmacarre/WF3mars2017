@@ -78,7 +78,11 @@ Style Reset
 Style largeur maximum
 */
 
-    nav ul, #portfolio, #aboutMe p, #contacts, footer section{
+    nav ul, 
+    main section:first-child,
+    main section:nth-child(2) p, 
+    main section:last-child, 
+    footer section{
         /*Définir une largeur maximum*/
         max-width: 95rem; 
         /*Centrer une balise de type block dans son parent*/
@@ -196,7 +200,7 @@ Style portfolio
     
 
 
-    #portfolio a{
+    main section:first-child a{
         font-size: 8rem;
         background: rgba(24, 188, 156, .7);
         color: white; 
@@ -247,7 +251,7 @@ Style About Me
 
       
 
-  #aboutMe p{
+  main section:nth-child(2) p{
       /*Afficher le texte sur 2 colonnes en CSS3*/
        -webkit-column-count: 2; /* Chrome, Safari, Opera */
         -moz-column-count: 2; /* Firefox */
@@ -259,7 +263,7 @@ Style About Me
         margin-bottom: 4rem; 
       }
 
-    #aboutMe a{
+    main section:nth-child(2) a{
 
     color: snow;
     border: .3rem solid snow;
