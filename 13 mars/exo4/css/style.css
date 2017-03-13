@@ -71,3 +71,4 @@ section:nth-child(3){
    /*Modifier la courbe d'animation*/
    -webkit-animation-timing-function: ease-in-out; 
     animation-timing-function: ease-in-out; 
+}
