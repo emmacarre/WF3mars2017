@@ -30,6 +30,7 @@ Style Reset
      }
 
      h1{
+         font-size: 3rem; 
          font-weight: 700;
          font-family: 'Eczar', serif;
          padding-bottom: 2rem; 
@@ -74,6 +75,8 @@ Style header
         color: snow; 
         background-color: #272527;
         padding: 2rem;
+
+        /*Bloquer les enfants dans le parent*/
         position: relative;
         
      }
@@ -83,7 +86,7 @@ Style header
      }
 
      nav:hover{
-         display: inline; 
+         display: block; 
      }
 
      header > a{

@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Roboto:400,700');
+
+/*
+Style Reset
+*/
+
+    /*Supprimer toutes les marges*/
+    *{
+        margin: 0;
+        padding: 0;
+
+        /* Intégrer le padding et le border dans la taille des boites */
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    /*Faire en sorte que 1rem=10px*/
+
+    html{
+        font-size: 62.5%;
+    }
+
+    body{
+        text-align: center;
+        font-size: 1.5rem; /* => 15px */
+        font-weight: 400;
+        font-family: 'Roboto', sans-serif; 
+         
+    }
+
+
+
+    h1{
+        font-size: 2.5rem;
+        font-weight: 700;
+        font-style: bold; 
+        font-family: 'Quicksand', sans-serif; 
+        color: #0b0b2d; 
+        padding-top: 2rem;  
+        padding-bottom: 2rem; 
+    }
+
+    h2{
+        font-size: 2rem;
+        font-weight: 700;
+        font-family: 'Quicksand', sans-serif;   
+        color: white;
+        background-color: #0b0b2d;
+        margin: 0 2rem 0 2rem;
+        padding: .8rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;   
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+
+    p{
+        padding-bottom: 2rem;
+    }
+
+    img{
+        max-width: 100%; 
+    }
+
+/*
+Style header
+*/
+
+    header{
+        background-image: url(../img/back.jpg);
+        background-attachment: fixed;
+        background-size: 100%;  
+        padding-bottom: 1rem;
+        
+    }
+
+    header li:first-child{
+        font-size: 2.5rem;
+        font-family: 'Quicksand', sans-serif; 
+        font-weight: 700;  
+    }
+
+    nav{
+        text-align: right; 
+    } 
+
+    nav ul{
+        color: white;
+        right: 0; 
+        padding: .5rem;    
+    }
+
+    nav li:first-child{ 
+        text-align: left;
+        width: 50%;
+        margin: .5rem;
+    }
+
+   li{
+        display: inline-block; 
+    }
+
+
+
+
+/*
+Style Main
+*/
+
+    h1 + img{
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        width: 30%; 
+        margin-bottom: 2rem;
+        float: initial;  
+    }
+
+            
+    .texte p{
+        column-count: 2;
+        text-align: left;
+        margin: 1.5rem;
+    }
+
+
+        /*Style Portfolio*/
+
+    figure{
+        position: relative;
+        line-height: 2.5rem; 
+    }
+        
+    figcaption{
+        position: absolute;
+        text-transform: uppercase; 
+        bottom: 0;
+        left: 0;
+        color: white;
+        line-height: 5rem;
+        background: rgba(128, 128, 128, .8);
+        margin-bottom: .8rem;
+        width: 100%;
+    }
+
+/*
+Style Form + Google Map
+*/
+
+    form{
+        margin: 2rem auto; 
+    }
+
+    textarea, input:not([type="submit"]){
+        display: block; 
+        color: black; 
+        background-color: #f5f3f3; 
+        width: 100%;
+        padding: 1.5rem;
+        margin: 2rem auto;
+
+        }
+
+    textarea{
+        min-height: 15rem; 
+    }
+
+    form :last-child{
+        color: white;
+        background-color: #0b0b2d;
+        padding: 1rem;
+        width: 20%;
+    }
+
+    /*Google Map*/
+
+    iframe{
+        width: 100%;
+        min-height: 30rem; 
+ 
+    }
+
+/*
+Style Footer
+*/
+
+    footer{
+        background-image: url(../img/back.jpg);
+        background-attachment: fixed;
+        background-size: 100%;  
+        padding-bottom: 1rem;
+        position: relative; 
+    }
+
+    footer li{
+        display: inline-block; 
+
+    }
+
+    footer li:last-child{
+        position: absolute; 
+        right: 2rem; 
+        font-size: 2.5rem;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 700;
+    }
+
+    footer nav{
+        text-align: left; 
+    }
+    
+
+    
+     ul{
+        left: 0; 
+        padding: .5rem; 
+    }
+
+   
+/*
+Requêtes médias
+*/
+
