@@ -1,0 +1,159 @@
+/*
+Style Reset
+J'ai besoin de supprimer toutes les marges, d'intégrer le padding et les bordures dans la taille des boîtes,
+et d'initialiser les REM
+*/
+
+    *{
+        margin: 0;
+        padding: 0; 
+
+        -webkit-box-sizing: border-box; 
+        box-sizing: border-box; 
+    }
+
+    html{
+        font-size: 62.5%; 
+    }
+
+    body{
+        font-size: 1.5rem; 
+    }
+
+    a{
+        text-decoration: none; 
+    }
+
+    img{
+        max-width: 100%; 
+    }
+
+/*
+Style header
+- Ajouter une marge intérieure de 20px
+- la nav ne dépasse pas les 850px et la centrer
+- les liens de la nav sont centrés sur une ligne 
+sauf le premier qui est à gauche et le dernier qui est à droite
+*/
+
+    header{
+        padding: 2rem;
+        background: dodgerblue; 
+        border: .1rem dashed darkblue;
+        text-align: center; /*pour centrer les liens de la nav dans le header, 
+        possible aussi de le mettre dans la nav*/ 
+    }
+
+    nav{
+        max-width: 85rem; /*pour qu'elle ne dépasse pas 850px*/
+        margin: auto; /*pour la centrer */
+        border: 1rem double lightskyblue;
+        position: relative; /*à intégrer avant de déplacer le 1er à gauche et le 2ème à droite*/ 
+    }
+
+    li{
+        display: inline-block; 
+        padding: 2rem;
+        font-size: 2rem;        
+    }
+
+    li:first-child, li:last-child{
+        position: absolute; /*pour pouvoir les déplacer*/
+        top: 0; 
+    }
+
+    li:first-child{
+        left: 0; 
+    }
+
+    li:last-child{
+        right: 0; 
+    }
+
+/*
+Style Main
+- le main ne dépasse pas 850px
+- les différentes sections ont une marge de bas de 40px
+*/
+
+    main{
+        max-width: 85rem;
+        margin: 0 auto 4rem auto; 
+        -webkit-box-shadow: 1rem 1rem 3rem lightgrey;
+        box-shadow: 1rem 1rem 3rem lightgrey;    
+        padding: 2rem;  
+    }
+
+    section:not(:last-child){ /*pour éviter une double marge en bas*/
+        margin-bottom: 4rem; 
+    }
+
+/*
+Style Porfolio
+- le portfolio est sur 2 colonnes
+- les figcaption sont calées au-dessus de l'image avec un fond de couleur blanc à 50% d'opacité
+tout en haut à gauche et sur toute la largeur
+*/
+
+    figure{
+        display: inline-block;
+        width: 49%;
+        top: 2rem; 
+        position: relative;  
+    }
+
+    figcaption{
+        position: absolute; 
+        top: 0; 
+        left: 0;
+        width: 100%; 
+        background: rgba(255, 255, 255, .7); 
+        padding: 1rem;
+    }
+
+/*
+Style Formulaire
+- le textarea et les input (sauf submit) font toute la largeur du formulaire
+- le submit a une couleur de fond et une couleur de police
+*/
+
+    form{
+        width: 50%; 
+        text-align: right; 
+    }
+
+    textarea, input:not([type="submit"]){
+        width: 100%; /*pour prendre toute la largeur*/ 
+        /*si on veut un formulaire plus carré, form{ width: 50%;}*/
+        padding: 1rem; 
+        margin-bottom: 1rem; 
+
+    }
+
+    [type="submit"]{
+        color: snow;
+        background: dodgerblue;
+        border: none; 
+        padding: 1rem; 
+    }
+
+
+/*
+Méthode Desktop Down
+*/
+
+    @media screen and (max-width: 450px){
+
+        figure, form, article {
+            width: 100%; 
+        }
+
+        li:first-child, li:last-child{
+            position: initial; 
+        }
+
+        li{
+            padding: 0; 
+        }
+
+    }

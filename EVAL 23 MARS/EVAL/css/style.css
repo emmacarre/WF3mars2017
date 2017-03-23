@@ -1,0 +1,56 @@
+/*
+Importation du CDN FontAwesome
+*/
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+
+/*
+Importation des polices Google Font
+*/
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+
+
+
+/*
+Style Reset
+*/
+    /*Supprimer toutes les marges*/
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    /*Faire en sorte que 1rem = 10px*/
+    html{
+        font-size: 62.5%;
+    }
+
+
+    /*Définir la police par défaut et l'image de fond du body */
+    body{
+        font-family: 'Arial', sans-serif; 
+        font-size: 1.5rem; /* = 15 px */
+        background-image: url(../img/background.png); 
+    }
+
+    /*Enlever le soulignement des balises liens*/
+    a{
+        text-decoration: none; 
+    }
+
+    /*Faire en sorte que les images ne dépassent pas leur parent*/
+    img{
+        max-width: 100%; 
+    }
+
+
+    main{
+        
+    }
+
+    /*Style du titre H1*/
+
+    h1{
+        font-family: 'Courgette', sans-serif; 
+        font-size: 3rem; 
+        color: #C55394; 
+    }
