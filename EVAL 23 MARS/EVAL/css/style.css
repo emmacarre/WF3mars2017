@@ -13,44 +13,213 @@ Importation des polices Google Font
 /*
 Style Reset
 */
-    /*Supprimer toutes les marges*/
-    *{
-        margin: 0;
-        padding: 0;
-    }
+        /*Supprimer toutes les marges*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
 
-    /*Faire en sorte que 1rem = 10px*/
-    html{
-        font-size: 62.5%;
-    }
-
-
-    /*Définir la police par défaut et l'image de fond du body */
-    body{
-        font-family: 'Arial', sans-serif; 
-        font-size: 1.5rem; /* = 15 px */
-        background-image: url(../img/background.png); 
-    }
-
-    /*Enlever le soulignement des balises liens*/
-    a{
-        text-decoration: none; 
-    }
-
-    /*Faire en sorte que les images ne dépassent pas leur parent*/
-    img{
-        max-width: 100%; 
-    }
+        /*Faire en sorte que 1rem = 10px*/
+        html{
+            font-size: 62.5%;
+        }
 
 
-    main{
+        /*Définir la police par défaut et l'image de fond du body */
+        body{
+            font-family: 'Arial', sans-serif; 
+            font-size: 1.5rem; /* = 15 px */
+            background-image: url(../img/background.png); 
+        }
+
+        /*Enlever le soulignement des balises liens*/
+        a{
+            text-decoration: none; 
+        }
+
+        /*Faire en sorte que les images ne dépassent pas leur parent*/
+        img{
+            max-width: 100%; 
+        }
+
+
+        /*Style du titre H1*/
+
+        h1{
+            font-family: 'Courgette', sans-serif; 
+            font-size: 3rem; 
+            color: #C55394;
+            text-align: center;
+
+            /*Code réalisé en concertation avec Nour qui a trouvé la solution pour placer l'image
+            derrière le titre ^^
+            j'ai ensuite joué sur le padding et la taille de l'image pour que l'arc-en-ciel touche le bord du main*/
+            padding: 4rem; 
+            background-image: url(../img/rainbow.png);
+            background-size: 41rem;
+            background-repeat: no-repeat;
+            background-position: center; 
+        }
+
+
+        h2, h3{
+            font-family: 'Courgette', sans-serif;
+            font-weight: 400;
+            font-size: 2rem;
+            color: #EB43A3;
+            padding: 1rem;
+            margin-left: -1rem; /*C'est dégueulasse de mettre une valeur négative mais je n'ai pas trouvé 
+            de meilleure solution pour aligner les titres! ^^*/    
+
+        }
+
+        h3{
+            font-size: 1.5rem;
+            font-weight: bold; 
+        }
+
+    
+/*
+Style header
+*/
+   
+        nav{
+            background-color: #C55394;
+            text-align: right;
+            position: relative;  
+        } 
         
-    }
 
-    /*Style du titre H1*/
+    /*Mettre les liens de la nav sur une ligne et en blanc*/
+        li, a{
+            display: inline-block;
+            margin: 1rem;
+            font-size: 1.3rem; 
+            text-transform: uppercase; 
+            color: white; 
+        }
 
-    h1{
-        font-family: 'Courgette', sans-serif; 
-        font-size: 3rem; 
-        color: #C55394; 
+    /*Sortir le 1er enfant li de la nav et le placer à gauche en changeant son style également*/
+        li:first-child{
+            position: absolute;
+            font-family: 'Courgette', sans-serif;
+            font-size: 2rem;
+            padding: .5rem;  
+            left: 0;
+            top: 0; 
+
+        }
+
+    /*Modifier les liens de la nav au survol*/
+        a:hover{
+            background: #EB43A3; 
+            margin: auto; 
+            padding: 2rem; 
+        }
+
+
+
+    /*
+Style Main
+- le main ne dépasse pas 850px
+- les différentes sections ont une marge de bas de 40px
+*/
+
+        main{
+            max-width: 85rem;
+            margin: 0 auto 4rem auto; 
+            background-color: white; 
+            -webkit-box-shadow: 1rem 1rem 3rem lightgrey;
+            box-shadow: 1rem 1rem 3rem lightgrey;
+            -webkit-border-radius: 2rem;
+            border-radius: 2rem;    
+            padding: 5rem;  
+        }
+
+        /*Style section "Le principe*/
+
+        section{
+            padding: 1rem; 
+        }
+
+        p {
+            display: inline-block;
+            margin: 1rem;
+        }
+
+        /*Style section "Nos licornes*/
+
+        figure {
+            display: inline-block;
+            position: relative; 
+            width: 24%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+        }
+
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem;
+            text-align: center;
+            background: rgba(51, 51, 51, .9);
+            color: white;
+        }
+
+
+        /*Style section "Nous trouver*/
+       
+        iframe {
+            width: 50%;
+            height: 28rem;
+            float: left; /*Place les articles suivants à droite de la carte*/
+        }
+
+
+       article {
+                display: inline-block;
+                padding-left: .5rem;
+                margin: 1.5rem;
+                line-height: 0rem;
+        }
+
+        p{
+            display: block; 
+            font-size: 1.3rem;
+            text-align: left;
+            margin: 1.5rem;   
+        }
+
+        form{
+            width: 20%; 
+        }
+
+       input[type="email"] {
+            height: 3rem;
+        }
+
+        input[type="submit"]{
+            background: #C55394;
+            color: white;
+            border:none;
+            padding: 1rem;
+            border-radius: .5rem;
+            width: 100%;
+            margin-top: 1rem; 
+            
+        }
+        
+
+/*
+Style Footer
+*/
+
+    footer{
+        background: #E577B5;
+        text-align: right;
+        color: white; 
+        padding: 1.5rem;  
     }
