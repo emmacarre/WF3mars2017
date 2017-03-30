@@ -13,7 +13,7 @@ for( var prop in users ){
     console.log(prop);
 
     // Afficher la valeur des propriétés
-    console.log( users[prop] ); 
+    console.log( users[prop] );
 
-}
+}; 
 
