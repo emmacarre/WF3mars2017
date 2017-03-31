@@ -34,6 +34,8 @@ h1, h2, h3, footer{
 /*
 Style Header
 */
+
+
     header, footer{
         background-color: lightskyblue; 
         padding: 2rem;
@@ -44,8 +46,8 @@ Style Header
 
     .fa-bars{
         position: absolute; 
-        background-color: snow;
-        border: .2rem solid darkblue;
+        background-color: lightskyblue;
+        border: .2rem solid snow;
         width: 3rem;
         height: 3rem;
         left: 50%;
@@ -69,12 +71,42 @@ Style Header
 
     }
 
-    a{
-        text-decoration: none; 
+    nav a{
+        font-weight: 500; 
+        text-decoration: none;
+        color: darkblue;
+        transition: all 1s;   
     }
 
     nav ul{
-        display: none; 
+        height: 0; 
+        overflow: hidden; /*cache la nav*/
+       -webkit-transition: all 1.5s;
+        transition: all 1.5s;  
+    }
+
+
+    .toggleBurger{
+        height: 13rem; /*permet de contenir le menu dans 
+        le burger menu et de réaliser la transition*/
+    }
+
+    nav li{
+        background: white;  
+        padding: 1rem;
+        margin-bottom: .5rem;
+
+       -webkit-transition: all 1s;
+        transition: all 1s;
+        
+    }
+
+    .active{
+        background: deepskyblue; 
+    }
+
+    .active a{
+        color: darkblue; 
     }
 
 
@@ -84,22 +116,28 @@ Style Main
 
     h2{
         color: darkblue; 
-        margin-bottom: 1rem;  
+        margin-bottom: 3rem;  
     }
 
     h2:after{ /*pour créer un trait sous le h2 */
         content:''; 
         display: block; 
-        width: 5rem;
-        height: .2rem; 
+        width: 6rem;
+        height: .3rem; 
         margin: auto; 
-        border-bottom: .2rem solid darkblue; 
+        border-bottom: .2rem solid darkblue;
+        padding-top: 1.5rem;  
     }
 
     h3{
-        margin-bottom: 1rem; 
+        margin-bottom: 2rem; 
     }
 
+    main, h1, nav{
+        max-width: 85rem; 
+        margin: auto;
+        position: relative;  
+    }
 
 /*
 Style Footer
@@ -112,3 +150,37 @@ footer{
     width: 100%;
     margin-bottom: 0;  
 }
+
+
+/*
+Requête média
+*/
+
+    @media screen and (min-width: 850px){
+        
+        /* Style header */
+
+        header{
+            text-align: left;             
+        }
+
+        .fa-bars{
+            display: none; 
+        }
+
+        nav ul{
+            height: auto; /*pour faire réapparaître la nav hors du burger menu*/
+            position: absolute; 
+            right: 0 ; 
+            bottom: 0;  
+        }
+
+        nav li{
+            display: inline-block; 
+        }
+
+        nav li:not(:last-child){
+            margin-right: .5rem; 
+        }
+
+    }
