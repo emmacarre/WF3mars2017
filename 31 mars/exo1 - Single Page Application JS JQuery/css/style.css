@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Vollkorn:400,700');
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'); 
+
+/*
+Style Reset 
+*/
+
+*{
+    margin: 0; 
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%; 
+}
+
+body{
+    font-size: 1.5rem;
+    font-family: 'PT Serif', sans-serif;
+    font-weight: 400; 
+    text-align: center; 
+
+}
+
+h1, h2, h3, footer{
+    font-family: 'Vollkorn', sans-serif;
+    font-weight: 700; 
+    color: darkblue; 
+}
+
+/*
+Style Header
+*/
+    header, footer{
+        background-color: lightskyblue; 
+        padding: 2rem;
+        margin-bottom: 4rem;
+        position: relative; 
+
+    }
+
+    .fa-bars{
+        position: absolute; 
+        background-color: snow;
+        border: .2rem solid darkblue;
+        width: 3rem;
+        height: 3rem;
+        left: 50%;
+        padding-top: .6rem;  
+        bottom: 0; 
+        cursor: pointer; 
+
+        -webkit-border-radius: 50%; 
+        border-radius: 50%; 
+        
+        -webkit-transform: translate(-50%, 50%); 
+        transform: translate(-50%, 50%); 
+    }
+
+   h1 span{
+        font-family: 'Vollkorn', sans-serif; 
+        font-weight: 500; 
+        font-size: 1.5rem; 
+        display: block; 
+        margin-bottom: 1rem; 
+
+    }
+
+    a{
+        text-decoration: none; 
+    }
+
+    nav ul{
+        display: none; 
+    }
+
+
+/*
+Style Main
+*/
+
+    h2{
+        color: darkblue; 
+        margin-bottom: 1rem;  
+    }
+
+    h2:after{ /*pour créer un trait sous le h2 */
+        content:''; 
+        display: block; 
+        width: 5rem;
+        height: .2rem; 
+        margin: auto; 
+        border-bottom: .2rem solid darkblue; 
+    }
+
+    h3{
+        margin-bottom: 1rem; 
+    }
+
+
+/*
+Style Footer
+*/
+
+footer{
+    position: fixed;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    margin-bottom: 0;  
+}
