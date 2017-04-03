@@ -42,7 +42,7 @@ $(document).ready(function (){
             console.log('Minimum 5 caractères');
 
             // Afficher un message dans le label
-            $('[for="userMessage"] b').text('Champ obligatoire'); 
+            $('[for="userMessage"] b').text('Minimum 5 caractères'); 
 
         }else{
             console.log('userMessage OK');
@@ -56,6 +56,10 @@ $(document).ready(function (){
 
             // Envoyer les données dans le fichier PHP et attendre sa réponse (true ou false)
             // Le PHP répond true!
+
+            // Ajouter le message dans la liste
+            $('section:last').append('<article><h4>'+ userMessage + '</h4><p>' + userName + '</p></article>')
+
             // Vider les champs du formulaire
             $('input:not([type="submit"]').val('');
             $('textarea').val(''); 
